@@ -1,7 +1,7 @@
 # The Dunder Mifflin Pet Show
 
 
-You're right on your way to help The Dunder Mifflin Paper Company with their brand new application. It is meant to 
+You're right on your way to help The Dunder Mifflin Paper Company with their brand new application. It is meant to
 showcase each of the employee's pet. We’ve started some of the work for you, and we need your help to get our site fully working! Here are the deliverables:
 
 - Build out the associations for the models we've created. If you look into the `seeds.rb` file, you'll notice that we've put
@@ -17,3 +17,8 @@ As a user, I should be able to create AND edit an Employee, and only be able to 
 No one at Dunder Mifflin can have the same alias and/or job title (Dwight made up that rule!)
 
 BONUS: Make an option to sort the dogs on the index page by the number of employees that belong to them.
+
+models -- makes relationships
+migration for new column add dog_id to employee
+run migration
+run seeds

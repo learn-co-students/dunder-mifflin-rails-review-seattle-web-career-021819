@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Employee Page</title>
+  </head>
+  <body>
+    <ul>
+      <li><%= @employee.first_name %></li>
+      <li><%= @employee.last_name %></li>
+      <li><%= @employee.alias %></li>
+      <li><%= @employee.office %></li>
+    </ul>
+    <img src=<%= @employee.img_url %> alt="employee image">
+  </body>

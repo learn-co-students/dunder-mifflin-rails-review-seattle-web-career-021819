@@ -1,0 +1,14 @@
+    NAME: 
+    <%= @dog.name %> <br>
+    BREED:
+    <%= @dog.breed %> <br>
+    AGE:
+    <%= @dog.age %> <br>
+    HUMANS: <br>
+    <% if @dog.employees %>
+        <% @dog.employees.each do |e| %>
+            <%= link_to e.first_name, employee_path(e)%> <br>
+        <% end %>
+    <% end %>
+    <br>
+ 

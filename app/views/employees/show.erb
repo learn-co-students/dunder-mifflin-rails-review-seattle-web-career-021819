@@ -1,0 +1,10 @@
+<h1>Show Employee</h1>
+
+<h2><%= @employee.to_s %></h2>
+a.k.a. <%= @employee.alias %><br>
+Title: <%= @employee.title %><br>
+Works at <%= @employee.office %><br>
+Dog: <%= link_to Dog.find(@employee.dog_id).name, dog_path(@employee.dog_id) %><br>
+
+<br><br>
+<img src="<%= @employee.img_url %>" alt="Picture of <%= @employee.to_s %>">

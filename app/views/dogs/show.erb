@@ -1,0 +1,11 @@
+<h1>Show Dog</h1>
+
+<h2><%= @dog.name %></h2>
+<%= @dog.breed %><br>
+<%= @dog.age %><br>
+<br>
+Holds dominion over:<br>
+
+<% @dog.employees.each do |employee| %>
+  <%= link_to employee.to_s, employee_path(employee) %><br>
+<% end %>

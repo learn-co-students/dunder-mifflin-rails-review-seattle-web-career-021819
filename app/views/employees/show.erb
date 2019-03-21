@@ -1,0 +1,22 @@
+    FIRST NAME: 
+    <%= @employee.first_name %> <br>
+    LAST NAME:
+    <%= @employee.last_name %> <br>
+    ALIAS:
+    <%= @employee.alias %> <br>
+    TITLE: 
+    <%= @employee.title %> <br>
+    OFFICE: 
+    <%= @employee.office %> <br>
+    <!-- IMAGE URL: 
+    <%= @employee.img_url %> <br> -->
+    DOG: 
+    <%= link_to @employee.dog.name, dog_path(@employee.dog)%>
+
+    <br>
+    PICTURE: <br>
+
+    <img src="<%=@employee.img_url%>" >
+
+    
+ 

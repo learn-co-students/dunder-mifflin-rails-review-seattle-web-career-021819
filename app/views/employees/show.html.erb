@@ -1,0 +1,10 @@
+<h1><%= @employee.first_name + " " + @employee.last_name %></h1>
+<h3>Alias</h3>
+<%= @employee.alias %><br>
+<h3>Title</h3>
+<%= @employee.title %>
+<h3>Office</h3>
+<%= @employee.office %><br>
+<img src = "<%= @employee.img_url %>" alt = "Employee Image">
+<br>
+<%= link_to "All Employees", employees_path %>
